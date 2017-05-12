@@ -25,59 +25,55 @@
 		<h1>Zoe's Eats</h1>
         <!-- <button type="submit" class="btn btn-default">Show Me The Food</button> -->
 		
-<div class="skills-wheel" >
-  <ul class="wheel" >
+<div class="skills-wheel ng-class: 'spin-'" >
+  <ul class="wheel ng-class: 'spin-'" >
     <li ng-repeat="item in items">
       <img ng-src="{{item.url}}" alt="#" ng-show="showListView"/>
       <a href="#" title="TITLE TEXT." class="fancybox" >{{item.food}}</a>
     </li>
 
     </ul>
-  <a href="#/" title="TITLE TEXT." class="btn"">Spin</a>
-  <!-- <button class="col-xs-6 btn btn-success" ng-click="spin()">Spin </button> -->
-</div>
-
-</div>
+  <a href="#/" title="TITLE TEXT." class="btn" ng-click="spin()">Spin</a>
+ <!--  <button class="col-xs-6 btn btn-success" ng-click="spin()">Spin </button> -->
 
 
 <!-- OVERLAY  -->
-<div id="pie" class="hide">
-<h2>Pie</h2>
+<div id="pie" ng-class="hide">
+<h2>{{item.food}}</h2>
 </div>
 
-<!-- OVERLAY Communication -->
-<div id="pizza" class="hide">
+<!-- <div id="pizza" ng-class="hide">
 <h2>Pizza</h2>
 </div>
 
-<!-- OVERLAY Teamwork -->
-<div id="pasta" class="hide">
+
+<div id="pasta" ng-class="hide">
 <h2>Pasta</h2>
 </div>
 
-<!-- OVERLAY Negotiation -->
-<div id="fruit" class="hide">
+
+<div id="fruit" ng-class="hide">
 <h2>Fruit</h2>
 </div>
 
-<!-- OVERLAY Problem Solving -->
-<div id="cookies" class="hide">
+<div id="cookies" ng-class="hide">
 <h2>Cookies</h2>
+</div> -->
+
 </div>
 
-<!-- OVERLAY Leadership -->
-<div id="salad" class="hide">
+</div>
+<!-- <div id="salad" ng-class="hide">
 <h2>Salad</h2>
 </div>
 
-<!-- OVERLAY Organisation -->
-<div id="mexican" class="hide">
+
+<div id="mexican" ng-class="hide">
 <h2>Mexican</h2>
 </div>
 
-<!-- OVERLAY Entrepreneurial Skills -->
-<div id="bbq" class="hide">
-<h2>BBQ</h2>
+<div id="bbq" ng-class="hide">
+<h2>BBQ</h2> -->
 </div>
   </div> <!-- closing div -->
 

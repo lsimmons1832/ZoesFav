@@ -50,31 +50,16 @@ $scope.showListView = true;
     url: "http://i57.tinypic.com/ehf2og.png"
   }
   ];
+
+
+
+	$scope.spin = () => {
+	let spin_count = 1;
+
+		$(".skills-wheel .wheel").removeClass('spin-'+ (spin_count+1));
+		$(".skills-wheel .wheel").toggleClass('spin-'  + spin_count);
+		
+		spin_count++;
+	};
 });
 
-var spin_count = 1;
-
-$(".skills-wheel .btn").click(function () {
-
-	$('.skills-wheel .wheel').removeClass('spin-' + (spin_count-1));
-
-    $('.skills-wheel .wheel').addClass('spin-' + spin_count);
-    
-    
-    if(spin_count == 1)
-    {
-	    // Popup relevant overlay
-    }
-
-	spin_count++;
-
-	// $scope.newItem = () => {
-	// let spin_count = 1;
-	// 	removeClass(div, 'spin-',  (spin_count-1));
-	// 	removeClass(ul, 'spin-', (spin_count-1));
-	// 	addClass(div, 'spin-', + spin_count);
-	// 	addClass(ul, 'spin-',  spin_count);
-	// 	spin_count++;
-	// };
-
-});
